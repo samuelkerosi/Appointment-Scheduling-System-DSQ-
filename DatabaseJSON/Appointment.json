@@ -1,0 +1,13 @@
+{
+    "Appointments":
+    {
+        "AppointmentId":
+        {
+            "Title":"",
+            "Description":"",
+            "Date":"",
+            "StartTime":"",
+            "VisitorId":""
+        }
+    }
+}

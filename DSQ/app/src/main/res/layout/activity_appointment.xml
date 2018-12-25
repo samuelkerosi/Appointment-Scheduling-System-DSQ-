@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="New Appointment"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/button_send"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/description"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/ic_check_circle_black_24dp"
+        android:text="REQUEST"
+        android:layout_alignLeft="@+id/description" />
+
+    <EditText
+        android:id="@+id/dateView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginBottom="291dp"
+        android:hint="Date"
+        android:inputType="date" />
+
+    <ImageButton
+        android:id="@+id/btn_date"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignTop="@+id/dateView"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="-1dp"
+        android:layout_toEndOf="@+id/dateView"
+        android:layout_toRightOf="@+id/dateView"
+        android:background="@drawable/ic_date_range_black_24dp" />
+
+    <EditText
+        android:id="@+id/timeView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginBottom="186dp"
+        android:hint="Time"
+        android:inputType="time" />
+
+    <ImageButton
+        android:id="@+id/btn_time"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignStart="@+id/btn_date"
+        android:layout_alignTop="@+id/timeView"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/ic_access_time_black_24dp"
+        android:text="SELECT TIME" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/titleView"
+        android:layout_alignTop="@id/titleView"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="223dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/titleView"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dateView"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="133dp"
+        android:ems="10"
+        android:hint="Title "
+        android:inputType="textPersonName" />
+
+    <ImageButton
+        android:id="@+id/button_cancel"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/button_send"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-2dp"
+        android:layout_marginRight="64dp"
+        android:background="@drawable/ic_cancel_black_24dp" />
+
+</RelativeLayout>
